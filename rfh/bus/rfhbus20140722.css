@@ -1,0 +1,886 @@
+/* GLOBAL ********************************* */
+* {
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.proxima, html, body {font-family:"proxima-nova", sans-serif;}
+.tisa, .main {font-family:"ff-tisa-web-pro", serif;}
+.oswald, h1, h2, h3, #kicker input[type="submit"], .read-more {font-family:"Oswald", sans-serif;}
+
+/* ----- Body ------------------------ */
+
+body {
+	font-size:1.125em;
+	line-height:1.389em;
+	position:relative;
+	padding:0;
+}
+
+#admin-menu * {font-size:14px;}
+body li {line-height:1.389em;}
+
+.main > .container, #main-content, #content {
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+h1, h2, h3 {
+	text-transform:uppercase;
+	font-weight:normal;
+}
+
+h3 {
+	font-size:1.667em;
+	color:#e74c3c;
+	line-height:1.2em;
+}
+
+h3 a, h3 a:hover {color:#e74c3c;}
+
+.main, .content-head, .mc-content {margin-bottom:0;}
+.grey {background-color:#f5f5f5;}
+
+/* ----- Custom Fonts ---------------- */
+/* ----- Text ------------------------ */
+/* ----- Links ----------------------- */
+/* ----- Lists ----------------------- */
+/* ----- Tables ---------------------- */
+/* ----- Forms ----------------------- */
+
+/* HEADER ********************************* */
+/* ----- Header Region --------------- */
+
+
+/* HEADER */
+
+#header {
+	background:#000;
+	height:100px;
+	padding:0 10px;
+	margin:0;
+}
+
+#header h1 {
+	width:75px;
+	margin:20px 0;
+	float:left;
+}
+
+#header h1 span {
+	height:60px;
+	width:70px;
+	float:left;
+}
+
+#header h1 a {
+	background-image:url("/sites/rfhbus/themes/rfhbus/images/BigH.svg");
+	height:100%;
+	width:100%;
+	display:block;
+	text-indent:-9999px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+#header h1 a:hover {opacity:1;}
+
+#header-content {
+	float:right;
+	clear:none;
+	width:calc(100% - 75px);
+}
+
+#header .section.header {
+	float:left;
+	clear:none;
+	margin:20px 0;
+	text-align:center;
+}
+
+#header .section.social {width:calc(100% - 75px);}
+
+#header .section.donate {
+	width:75px;
+	height:50px;
+	margin:25px 0;
+	float:right;
+}
+
+.section.social h2 {
+	font-size:1em;
+	color:#fff;
+	line-height:1em;
+	margin:0 0 13px;
+}
+
+.section.social ul.social {
+	width:120px;
+	color:#fff;
+	display:table;
+	text-align:center;
+	margin:0 auto;
+}
+
+.section.social ul.social li {
+	display:table-cell;
+	text-align:center;
+}
+
+.section.social ul.social a {
+	color:#fff;
+	font-size:1.5em;
+	display:block;
+	width:40px;
+}
+
+.section.social ul.social a:hover {color:#2980b9;}
+
+.section.donate a.donate {
+	display:block;
+	background:#ea4c36;
+	color:#fff;
+	text-decoration:none;
+	padding:0;
+	margin:0 auto;
+	height:50px;
+	line-height:50px;
+	text-transform:uppercase;
+	font-size:1em;
+	-webkit-transition:background 150ms linear, color 150ms linear;
+	-moz-transition:background 150ms linear, color 150ms linear;
+	transition:background 150ms linear, color 150ms linear;
+	max-width:150px;
+}
+
+.section.donate a.donate:hover {background:#e8371f;}
+
+
+/* ----- Secondary Navigation -------- */
+
+#block-menu-menu-secondary {display:none;}
+
+/* ----- Breadcrumbs ----------------- */
+/* ----- First Sidebar Menu Blocks --- */
+/* ----- Second Sidebar Menu Blocks -- */
+/* ----- Admin Menu ------------------ */
+/* ----- Pager Nav ------------------- */
+
+/* SIDEBARS ******************************* */
+
+/* FOOTER ********************************* */
+
+#footer {
+	background-color:#000;
+	margin:0;
+}
+
+#footer-content {
+	padding-top:40px;
+	color:#fff;
+}
+
+#footer-content a {color:#fff;}
+
+#footer-content .inner {
+	background-image:url("/sites/rfhbus/themes/rfhbus/images/BigH.svg");
+	background-position:top center;
+	background-repeat:no-repeat;
+	padding-top:250px;
+	text-align:center;
+	font-size:.778em;
+	background-size: 240px 203px;
+}
+
+.block.footer {
+	width:100%;
+	margin:0;
+	padding:0 16px;
+}
+
+.block.footer #FECNotice {
+	border:1px solid #fff;
+	display:inline-block;
+	padding:10px;
+	font-size:.714em;
+	line-height:1.4em;
+}
+
+
+
+/* ----- Fat Footer ------------------ */
+
+/* CONTENT ******************************** */
+
+
+p.read-more {
+	text-align:center;
+	text-transform:uppercase;
+	line-height:1em;
+	font-size:1.333em;
+	margin:20px 0 0;
+}
+
+p.read-more a {
+	border:3px solid #000;
+	display:block;
+	color:#000;
+	padding:15px 0;
+	width:100%;
+}
+
+p.read-more a:hover {
+	border:3px solid #000;
+	color:#fff;
+	background:#000;
+}
+
+
+/* HOMEPAGE ******************************* */
+
+/* VIEWS ********************************** */
+
+.item-list ul {
+	list-style:none;
+	margin:0;
+}
+
+.item-list ul li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+
+/* ----- Search Results -------------- */
+
+/* CONTAINERS ***************************** */
+/* ----- Blocks ---------------------- */
+
+.block.section.panel {margin:0;}
+
+.block.section.panel > h2 {
+	background:#000;
+	color:#fff;
+	padding:25px 0;
+	text-align:center;
+	margin:0;
+	font-size:1.667em;
+	display:block;
+}
+
+.block.section.getonthebus, .block.section.jointheteam > .content {
+	background-repeat:no-repeat;
+	background-size:cover;
+	display:table;
+	color:#fff;
+	width:100%;
+	position:relative;
+}
+
+
+
+.block.section.getonthebus {
+	background-image:url("/sites/rfhbus/themes/rfhbus/images/TopBackgroundBus640.jpg");
+	background-position:center center;
+}
+
+.block.section.getonthebus > .content,
+.block.section.jointheteam > .content .ngp-form {
+	display:table-cell;
+	vertical-align:middle;
+	background-color:rgba(0,0,0,.5);
+	padding:100px 16px 150px;
+	width:100%;
+}
+
+.getonthebus form#ngpvan-oberon-webform {margin:0;}
+.getonthebus form#ngpvan-oberon-webform .ngp-col,
+.getonthebus form#ngpvan-oberon-webform .form-item,
+.getonthebus form#ngpvan-oberon-webform .ngp-form-submit {float:left;}
+.block.section.getonthebus .ngp-form legend {display:none;}
+.getonthebus form#ngpvan-oberon-webform .ngp-col,
+.getonthebus form#ngpvan-oberon-webform .form-item-EmailAddress {padding-right:10px;}
+.getonthebus form#ngpvan-oberon-webform .ngp-col {width:70%;}
+.getonthebus form#ngpvan-oberon-webform .form-item {margin:0;}
+.getonthebus form#ngpvan-oberon-webform .form-item-EmailAddress {width:60%;}
+.getonthebus form#ngpvan-oberon-webform .form-item-PostalCode {width:40%;}
+.getonthebus form#ngpvan-oberon-webform .ngp-form-submit {width:30%;}
+
+.getonthebus form#ngpvan-oberon-webform .form-item input,
+.getonthebus form#ngpvan-oberon-webform .ngp-form-submit input {
+	height:50px;
+	line-height:40px;
+}
+
+.getonthebus span.icon-circle-arrow-down {
+	position:absolute;
+	bottom:20px;
+	display:block;
+	left:0;
+	right:0;
+	margin-right:auto;
+	margin-left:auto;
+	width:100px;
+	text-align:center;
+	font-size:4.444em;
+	line-height:1em;
+	opacity:.4;
+}
+
+.section.block.updates {margin:0;}
+
+.section.block.updates .view-header > .view {
+	position:relative;
+	width:100%;
+	color:#fff;
+}
+
+.section.block.updates .view-header > .view-tweets {background:#e74c3c;}
+.section.block.updates .view-header > .view-tweets.last {background:#2980b9;}
+
+.section.block.updates .view-header > .view-tweets:before {
+	content:"";
+	display:block;
+	padding-top:100%;
+}
+
+.section.block.updates .view-header > .view-tweets .view-content {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+
+.section.block.updates .view-header > .view-tweets div.views-row {
+	text-align:center;
+	height:100%;
+	position:relative;
+	margin:0;
+	display:table;
+}
+
+.section.block.updates .tweet-wrapper {
+	display:table-cell;
+	vertical-align:middle;
+	padding:0 20px;
+}
+
+.section.block.updates .views-row p.tweet-time {margin:0;
+	font-family:"proxima-nova", sans-serif;
+	text-transform:uppercase;
+	font-size:.5455em;
+}
+
+p.tweet-time em {font-style:normal;}
+.section.block.updates .view-header > .view figure {margin:0;}
+.section.block.updates .view-header > .view figure img {width:100%;}
+.section.block.updates .view-header > .view figure figcaption {display:none;}
+
+.section.block.updates .view-tweets a {
+	color:#fff;
+	font-weight:bold;
+}
+
+.section.block.updates span.icon {
+	position:absolute;
+	top:20px;
+	left:20px;
+	font-size:2em;
+}
+
+.section.block.updates span.icon.icon-instagram {text-shadow:0px 0px 2px #000;}
+
+.section.block.updates .view-header > .view-tweets .view-footer {
+	position:absolute;
+	bottom:20px;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.section.block.updates .view-updates > .view-content {display:none;}
+
+.ontheroadagain {
+	background:#2c3e50;
+	color:#fff;
+}
+
+.ontheroadagain #banner {
+	background-image:url("/sites/rfhbus/themes/rfhbus/images/BusMap600.jpg");
+	background-repeat:no-repeat;
+	min-height:250px;
+	background-size:contain;
+}
+
+.ontheroadagain > .content {padding:0 16px;}
+.ontheroadagain .view-header {padding-bottom:5px;}
+
+.ontheroadagain .view-header h2 {
+	text-align:center;
+	font-size:1.333em;
+}
+
+.ontheroadagain .view-content li.views-row {padding-bottom:.5em;}
+
+.ontheroadagain h2.event-date {
+	font-size:1.167em;
+	margin-bottom:0;
+}
+
+.ontheroadagain p.event-location {margin-bottom:0;}
+
+.ontheroadagain .more-link {
+	font-family:"Oswald", sans-serif;
+	border:3px solid #fff;
+	display:block;
+	margin: 0 0 1em;
+	text-align:center;
+}
+
+.ontheroadagain .more-link a {
+	display:block;
+	background-image:none;
+	color:#fff;
+	font-size:1.333em;
+	padding:10px 0;
+}
+
+.block.section.jointheteam > .content {
+	background-image:url("/sites/rfhbus/themes/rfhbus/images/BottomBackgroundBus640.jpg");
+	background-position:center center;
+}
+
+.block.section.jointheteam > .content .ngp-form {
+	background-color:transparent;
+	padding:16px;
+}
+
+.block.section.jointheteam .ngp-form legend {
+	border:0;
+	color:#fff;
+	font-family:"Oswald", sans-serif;
+	text-transform:uppercase;
+	font-size:1.667em;
+}
+
+/* ----- Wells ----------------------- */
+/* ----- Callouts and Blockquotes ---- */
+/* ----- Pullquote Text -------------- */
+
+/* IMAGES ******************************** */
+
+/* ICONS ********************************* */
+
+/* ----- Social Media Icons ---------- */
+
+ul.social {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+/* HELPER CLASSES ************************ */
+/* ----- Style ----------------------- */
+/* ----- Positioning ----------------- */
+/* ----- Sizing ---------------------- */
+
+/* GENERAL OVERRIDES ********************* */
+/* ----- Bootstrap Overrides --------- */
+
+.alert {border-radius:0;}
+.kicker .alert {margin-bottom:10px;}
+
+/* ----- Field Collection Overrides -- */
+/* ----- Field Label Overrides ------- */
+
+/* ADMINISTRATION ************************ */
+/* ----- Admin ----------------------- */
+/* ----- User Block ------------------ */
+
+/* MEDIA QUERIES ************************* */
+/* ----- Responsive ------------------ */
+/* ----- Print ----------------------- */
+
+
+@media (min-width:480px) {
+
+	#header .section.social {width:calc(100% - 125px);}
+	#header .section.donate {width:125px;}
+
+
+	.ontheroadagain #banner {min-height:300px;}
+	.ontheroadagain > .content {padding:0 40px;}
+	.ontheroadagain .more-link {margin:1em 0 2em;}
+
+}
+
+@media (min-width:560px) {
+
+	.section.block.updates .view-header > .view {
+		width:50%;
+		float:left;
+	}
+
+	.block.section.getonthebus {background-image:url("/sites/rfhbus/themes/rfhbus/images/TopBackgroundBus1000.jpg");}
+	.block.section.getonthebus > .content {padding:200px 40px 250px;}
+	.block.section.jointheteam > .content {background-image:url("/sites/rfhbus/themes/rfhbus/images/BottomBackgroundBus1000.jpg");}
+	.block.section.jointheteam > .content .ngp-form {padding:40px;}
+
+	.ontheroadagain #banner {
+	    background-image:url("/sites/rfhbus/themes/rfhbus/images/BusMap800.jpg");
+	    min-height:350px;
+	}
+
+}
+
+@media (min-width:640px) {
+
+	.ontheroadagain #banner {min-height:400px;}
+
+}
+
+
+/* Portrait tablet and up */
+@media (min-width:768px) {
+
+	body {
+		font-size:1.375em;
+		line-height:1.5em;
+	}
+
+	body li {line-height:1.5em;}
+
+	form#ngpvan-oberon-webform .ngp-form-submit input {font-size:1.091em;}
+
+
+	h3 {
+		font-size:1.364em;
+		line-height:1.4em;
+	}
+	
+	#header h1 {width:150px;}
+	#header .section.header {margin-bottom:15px;}
+	#header-content, #header .section.social {width:calc(100% - 150px);}
+	#header .section.donate {width:150px;}
+	.section.social h2 {
+		font-size:.818em;
+		margin-bottom:5px;
+	}
+
+
+	.block.section.panel > h2 {
+		padding:30px 0;
+		font-size:1.364em;
+		line-height:1em;
+	}
+	
+	.block.section .ngp-form h1 {
+		font-size:2.182em;
+		line-height:1.25em;
+	}
+	
+	.block.section .ngp-form p {
+		font-size:1.091em;
+		line-height:1.417em;
+	}
+
+	.block.section.getonthebus {
+		background-image:url("/sites/rfhbus/themes/rfhbus/images/TopBackgroundBus1200.jpg");
+		background-position:top right;
+	}
+	
+	.block.section.getonthebus > .content {
+		padding:100px 0 150px;
+		background-color:transparent;
+	}
+	
+	.block.section.getonthebus .ngp-form {
+		width:740px;
+		margin:0 auto;
+		padding-right:370px;
+	}
+
+	p.tweet-text {
+		font-size:.909em;
+		line-height:1.4em;
+	}
+
+	.ontheroadagain {height:590px;}
+
+	.ontheroadagain #banner {
+		background-image:url("/sites/rfhbus/themes/rfhbus/images/BusMap1200.jpg");
+		background-size:cover;
+		width:66%;
+		width:calc(100%*2/3);
+		float:left;
+		height:500px;
+	}
+
+	.ontheroadagain > .content {
+		float:left;
+		width:33%;
+		width:calc(100%/3);
+		overflow:scroll;
+		height:500px;
+	}
+	
+	.ontheroadagain .view-header h2 {margin-top:1em;}
+	.ontheroadagain .more-link a {font-size:1.091em;}
+
+	.block.section.jointheteam > .content {background-image:url("/sites/rfhbus/themes/rfhbus/images/BottomBus1200.jpg");}
+	.block.section.jointheteam > .content .ngp-form {padding:100px 0;}
+
+	.block.section.jointheteam > .content .ngp-form .ngp-form-view {
+		width:740px;
+		margin:0 auto;
+	}
+	
+	.jointheteam .markup-HeaderHtml {
+		width:370px;
+		float:left;
+		padding-right:40px;
+	}
+	
+	.jointheteam form#ngpvan-oberon-webform {
+		width:370px;
+		float:left;
+		padding-left:40px;
+		padding-top:15px;
+	}
+
+	#footer-content {padding-top:40px;}
+	#footer .container {padding:0;}
+	
+	#footer-content .inner {
+		background-position:top right;
+		padding-top:0;
+		height:100px;
+		background-size:70px;
+		width:700px;
+	}
+	
+	.footer .block.address {
+		font-size:.818em;
+		line-height:1.714em;
+		margin:0;
+		width:630px;
+		float:none;
+		padding:0;
+	}
+	
+	.block.footer #FECNotice {
+		font-size:.857em;
+		line-height:1.5em;
+		margin:20px auto 0;
+	}
+	
+	#FECNotice span {display:block;}
+
+	.footer .block.address .address {
+		width:130px;
+		float:left;
+		margin:0;
+		line-height:1.428em;
+	}
+	
+	.footer .block.address .address span {display:block;}
+
+	.footer .block.address p#FECNotice {
+		margin-top:0;
+		width:400px;
+	}
+
+}
+
+
+
+
+/* desktop and large desktop */
+@media (min-width:980px) {
+
+	.front #content-body .region .block .content,
+	#main-top .callout .content, .block.latest .content {margin:0 auto;}
+	.section.block.updates .view-header > .view {
+		width:33%;
+		width:calc(100% / 3);
+	}
+
+	.block.section.getonthebus .ngp-form {
+		width:960px;
+		padding-right:480px;
+	}
+
+	.getonthebus form#ngpvan-oberon-webform .ngp-col {width:330px;}
+	.getonthebus form#ngpvan-oberon-webform .form-item {margin:0;}
+	.getonthebus form#ngpvan-oberon-webform .form-item-EmailAddress {width:205px;}
+	.getonthebus form#ngpvan-oberon-webform .form-item-PostalCode {width:115px;}
+	.getonthebus form#ngpvan-oberon-webform .ngp-form-submit {width:150px;}
+
+	.block.section.jointheteam > .content .ngp-form .ngp-form-view {width:960px;}
+
+	.jointheteam .markup-HeaderHtml {
+		width:480px;
+		padding-right:100px;
+	}
+	
+	.jointheteam form#ngpvan-oberon-webform {
+		width:480px;
+		padding-left:100px;
+	}
+
+}
+
+
+
+
+
+/* large desktop */
+@media (min-width:1200px) {
+
+	.block.section.getonthebus {
+		background-image:url("/sites/rfhbus/themes/rfhbus/images/TopBackgroundBus1600.jpg");
+		background-position:center right;
+	}
+	
+	.section.block.updates .tweet-wrapper {padding:0 80px;}
+	.ontheroadagain #banner {background-image:url("/sites/rfhbus/themes/rfhbus/images/BusMap1920.jpg");}
+
+	.ontheroadagain > .content {
+		padding-left:100px;
+		padding-right:100px;
+	}
+	
+	.ontheroadagain > .content .more-link {
+		margin-left:-10px;
+		margin-right:-10px;
+	}
+
+	.block.section.jointheteam > .content {background-image:url("/sites/rfhbus/themes/rfhbus/images/BottomBus1600.jpg");}
+
+}
+
+
+/* large desktop */
+@media (min-width:1600px) {
+
+	.block.section.getonthebus {background-image:url("/sites/rfhbus/themes/rfhbus/images/TopBackgroundBus2600.jpg");}
+	.block.section.jointheteam > .content {background-image:url("/sites/rfhbus/themes/rfhbus/images/BottomBackgroundBus2600.jpg");}
+	.ontheroadagain {height:690px;}
+	.ontheroadagain #banner {height:600px;}
+	.ontheroadagain > .content {height:600px;}
+	
+}
+
+
+
+
+/* Forms */
+
+.ngp-form .form-item {
+	padding:0 0 16px;
+	margin:0;
+	width:100%;
+}
+
+form#ngpvan-oberon-webform .ngp-form-submit input {
+	background:#2980b9;
+	height:50px;
+	font-family:"Oswald", sans-serif;
+	text-transform:uppercase;
+	color:#fff;
+	text-shadow:0 0 0;
+	box-shadow:0 0 0;
+	border:0;
+	line-height:40px;
+	font-weight:normal;
+	font-size:1em;
+}
+
+.ngp-col input.form-text,
+.ngp-col select.form-select,
+.ngp-form-submit input {
+	border:1px solid #d5d0c2;
+	border-radius:0;
+	box-shadow:0 0 0;
+	color:#64656a;
+	font-family:"proxima-nova",sans-serif;
+	font-size:1em;
+	height:40px;
+	line-height:30px;
+	padding:5px 10px;
+	margin:0;
+	width:100%;
+}
+
+.ngp-form .alert-error {margin:0 0 10px;}
+
+.ngp-col select.form-select {
+	background:#8c8b87;
+	color:#fff;
+	padding:7px 5px;
+	border-radius:0;
+	-webkit-border-radius:0;
+}
+
+.jointheteam form#ngpvan-oberon-webform .ngp-form-submit input {
+	background:transparent;
+	border:3px solid #fff;
+	line-height:34px;
+}
+
+
+
+
+@media (min-width:560px) {
+
+	.jointheteam form#ngpvan-oberon-webform .ngp-form-submit input {
+		width:200px;
+		margin:0 auto;
+		float:none;
+		text-align:center;
+		display:block;
+	}
+
+}
+
+
+
+/* Portrait tablet and up */
+@media (min-width: 768px) {
+
+	.jointheteam .form-item-FirstName,
+	.jointheteam .form-item-City,
+	.jointheteam .form-item-HomePhone,
+	.jointheteam .form-item-Employer {
+		float:left;
+		width:50%;
+		padding-right:5px;
+		clear:left;
+	}
+	
+	.jointheteam .form-item-LastName,
+	.jointheteam .form-item-StateProvince,
+	.jointheteam .form-item-PostalCode,
+	.jointheteam .form-item-EmailAddress {
+		float:left;
+		width:50%;
+		padding-left:5px;
+	}
+	
+	.jointheteam .form-item-StateProvince,
+	.jointheteam .form-item-PostalCode,
+	.jointheteam .form-item-ExpirationMonth,
+	.jointheteam .form-item-ExpirationYear {width:25%;}
+	
+	.jointheteam .form-item-StateProvince {padding:0 5px;}
+
+	.ngp-col input.form-text, .ngp-col select.form-select {font-size:.818em;}
+
+}
