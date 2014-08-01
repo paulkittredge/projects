@@ -1,0 +1,511 @@
+/* GLOBAL ********************************* */
+* {
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+
+/* ----- Body ------------------------ */
+
+body {
+	font-family:"proxima-nova", sans-serif;
+	font-size:1em;
+	line-height:1.5em;
+	padding:0;
+	color:#000;
+}
+
+#main > .container {padding:0;}
+#content-head, #content-body, #content-lower, #content-bottom, #footer > .container {padding:0 10px;}
+
+h1#page-title {
+	color:#666;
+	font-family:"ff-tisa-web-pro", serif;
+	font-style:italic;
+	font-weight:300;
+	margin:0;
+	font-size:1.75em;
+	line-height:1.286em;
+}
+
+h1#page-title:before {
+	color:#ff4d00;
+	font-family:FontAwesome;
+	font-style:normal;
+	margin:0 10px 0 0;
+	font-size:1em;
+	font-weight:300;
+}
+
+#content-head {margin-bottom:16px;}
+
+#main, #content-lower, #content-bottom {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#main, #content {margin-bottom:0;}
+
+#content-lower {background:#f1f1ed;}
+#content-bottom {background:#666;}
+strong {font-weight:700;}
+
+#ngpvanevents-index h3 a {
+	font-weight:400;
+	color:#999;
+}
+
+/* ----- Custom Fonts ---------------- */
+/* ----- Text ------------------------ */
+/* ----- Links ----------------------- */
+/* ----- Lists ----------------------- */
+/* ----- Tables ---------------------- */
+/* ----- Forms ----------------------- */
+
+/* HEADER ********************************* */
+/* ----- Header Region --------------- */
+
+
+/* HEADER */
+
+#header {
+	background:#333;
+	padding:0;
+}
+
+#header > .container {
+	padding:0;
+	background:none;
+}
+
+.header #logo {
+	background:url(/sites/credo/themes/credo/images/logo.png);
+	margin:20px auto;
+	padding:0;
+}
+
+.header #logo, #logo a {
+	width:150px;
+	height:140px;
+}
+
+#logo a {
+	display:block;
+	text-indent:-9999px;
+}
+
+/* NAVIGATION ***************************** */
+/* ----- Main Navigation ------------- */
+
+#main-menu ul.menu {font-size:1.031em;}
+
+#main-menu ul.menu li a {
+	text-transform:uppercase;
+	font-weight:600;
+	color:#666;
+}
+
+#main-menu .container,
+#main-menu .container .navbar .navbar-inner {
+	background:none;
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+}
+
+#main-menu .navbar-inner {box-shadow:0 0 0;}
+
+/* ----- Secondary Navigation -------- */
+
+/* ----- Breadcrumbs ----------------- */
+/* ----- First Sidebar Menu Blocks --- */
+/* ----- Second Sidebar Menu Blocks -- */
+/* ----- Admin Menu ------------------ */
+/* ----- Pager Nav ------------------- */
+
+/* SIDEBARS ******************************* */
+
+/* FOOTER ********************************* */
+
+.site-footer {margin:0;}
+
+.site-footer .block.disclaimer {
+	border:0;
+	padding:0;
+	margin:0;
+	font-size:.625em;
+	width:100%;
+	max-width:100%;
+}
+
+.site-footer .block.disclaimer a {color:#000;}
+.site-footer .block.disclaimer a:hover {text-decoration:underline;}
+
+
+
+
+/* ----- Fat Footer ------------------ */
+
+/* CONTENT ******************************** */
+
+.page-event #content-body,
+.entity-ngpvanforms-form {padding-bottom:20px;}
+
+#ngpvanevents-infobox {
+	background:#f1f1ed;
+	padding:20px;
+}
+
+#ngpvanevents-infotext {width:100%;}
+
+#ngpvanevents-infotext > span {
+	display:block;
+	position:relative;
+	padding-left:100px;
+}
+
+#ngpvanevents-infotext > span h3 {
+	position:absolute;
+	left:0;
+	top:0;
+	margin:0;
+	line-height:1.5em;
+	font-size:1em;
+	width:90px;
+	text-align:right;
+}
+
+.page-ngpvanforms #ngpvanevents-infotext .locality,
+.page-ngpvanforms #ngpvanevents-infotext .region {
+	float:left;
+	padding-right:10px;
+	width:auto;
+}
+
+#ngpvanevents-form-detail-van-form .fieldset-wrapper {padding-top:20px;}
+
+
+/* HOMEPAGE ******************************* */
+
+/* VIEWS ********************************** */
+
+
+/* ----- Search Results -------------- */
+
+/* CONTAINERS ***************************** */
+/* ----- Blocks ---------------------- */
+
+.block-menu ul.menu li a:hover {
+	background-image:none;
+	background-color:transparent;
+	opacity:1;
+}
+
+.block.footer.donate p.donate a {
+	display:block;
+	width:250px;
+	height:76px;
+	background:url(/sites/credo/themes/credo/images/donate.png);
+	margin:0 auto;
+	transition:none;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+
+.block.footer.donate p.donate a:hover {
+	display:block;
+	width:250px;
+	height:76px;
+	background-position:bottom left;
+	opacity:1;
+}
+
+.block.footer.donate h3 {
+	font-size:2.25em;
+	line-height:1em;
+	font-weight:100;
+	margin:36px 0;
+}
+
+#content-lower .region .block, #content-bottom .region .block {margin:0 auto;}
+.block.social.menu a, .block.states.menu a {color:#fff;}
+#content-bottom .block.social.menu {margin-top:-47px;}
+
+.block.social.menu .menu {
+	text-align:center;
+	margin:0;
+}
+
+.block.social.menu .menu li {
+	display:inline-block;
+	float:none;
+	margin:0;
+	padding:0 5px;
+}
+
+.block.social.menu .menu li a {
+	background-color:#1d96cb;
+	border:4px solid #fff;
+	border-radius:100%;
+	font-size:32px;
+	height:48px;
+	line-height:32px;
+	margin:0;
+	padding:6px 0 0;
+	width:48px;
+	overflow:hidden;
+}
+
+.block.social.menu .menu li a.icon-twitter {padding-left:2px;}
+
+.block.states.menu * {text-align:center;}
+
+.block.states.menu h2 {
+	color:#b3b3b3;
+	font-size:1.5em;
+	font-weight:300;
+	line-height:1em;
+	padding:30px;
+	background:url(/sites/credo/themes/credo/images/divider.png);
+	background-position:bottom center;
+	background-repeat:no-repeat;
+	text-transform:uppercase;
+	margin:0 0 10px;
+}
+
+.block.states.menu .menu {margin:0;}
+.block.states.menu .menu li {margin-bottom:10px;}
+
+.block.states.menu .menu li a {
+	color:#fff;
+	font-family:ff-tisa-web-pro;
+	font-size:1.5em;
+	font-style:italic;
+	font-weight:300;
+	text-decoration:none;
+	display:inline;
+}
+
+.block.states.menu .menu li a:hover {border-bottom:1px dotted #fff;}
+
+
+
+/* ----- Wells ----------------------- */
+/* ----- Callouts and Blockquotes ---- */
+/* ----- Pullquote Text -------------- */
+
+/* IMAGES ******************************** */
+
+/* ICONS ********************************* */
+
+/* ----- Social Media Icons ---------- */
+
+/* HELPER CLASSES ************************ */
+/* ----- Style ----------------------- */
+/* ----- Positioning ----------------- */
+/* ----- Sizing ---------------------- */
+
+/* GENERAL OVERRIDES ********************* */
+/* ----- Bootstrap Overrides --------- */
+
+/* ----- Field Collection Overrides -- */
+/* ----- Field Label Overrides ------- */
+
+/* ADMINISTRATION ************************ */
+/* ----- Admin ----------------------- */
+/* ----- User Block ------------------ */
+
+/* MEDIA QUERIES ************************* */
+/* ----- Responsive ------------------ */
+/* ----- Print ----------------------- */
+
+
+
+
+/* below iPad portrait */
+@media (max-width:767px) {
+
+	#main-menu {
+		position:relative;
+		margin:0;
+		background-color:#dfe0d8;
+		z-index:100;
+	}
+	
+	#main-menu .container,
+	#main-menu .container .navbar .navbar-inner {padding:5px;}
+	#main-menu .navbar {margin:0;}
+	
+	
+	#main-menu .navbar .container {
+		border-radius:3px;
+		background-color:#fff;
+	}
+	
+	a.btn.btn-navbar {margin-bottom:5px;}
+	#main-menu .navbar .container ul {padding:5px;}
+	.nav-collapse .nav > li.expanded.open > ul.dropdown-menu {display:block;}
+	.nav-collapse .nav > li.expanded span.caret {display:inline-block;}
+
+}
+
+
+/* Portrait tablet and up */
+@media (min-width:768px) {
+
+	#header > .container, #footer > .container, #content-head,
+	#content-body .region, #content-lower .region,
+	#content-bottom .region {
+		width:740px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	#main > .container, #main-content, #content {
+		width:100%;
+		margin:0;
+	}
+	
+	#content-head, #content-body,
+	#content-lower, #content-bottom,
+	#footer > .container {padding:0;}
+	
+	#content-lower, #content-bottom {
+		padding-top:40px;
+		padding-bottom:40px;
+	}
+
+	#header {
+		height:140px;
+		border-bottom:12px solid #dfe0d8;
+	}
+
+	#header > .container {position:relative;}
+
+	.header #logo {
+		position:absolute;
+		top:0;
+		left:0;
+		margin:0;
+	}
+
+	#main {padding:34px 0 40px;}
+	#main > .container {padding:0;}
+
+	#main-menu {
+		background:transparent;
+		float:right;
+		width:auto;
+		margin:15px 0 0;
+		text-align:right;
+	}
+	
+	#main-menu > .container {
+		width:100%;
+		padding:0;
+	}
+	
+	.site-main-menu .navbar {margin:0;}
+	
+	#main-menu ul.menu li {
+		padding:10px 5px 15px;
+		width:auto;
+	}
+
+	#main-menu .nav > li:hover {background-color:#333;}
+
+	#main-menu ul.menu li a {
+		background:#202020;
+		color:#999;
+		padding:17px 26px;
+		border:2px solid #202020;
+		text-shadow:none;
+		transition:none;
+	}
+
+	#main-menu .nav > li a:hover {
+		background-color:#202020;
+		opacity:1;
+		transition:none;
+	}
+
+	#main-menu ul.menu li a.donate {color:#fff;}
+	#main-menu ul.menu li a.donate:hover {border:2px solid #ff4d00;}
+
+	#content-lower .region .block, #content-bottom .region .block {width:460px;}
+	#content-bottom .block.social.menu {margin-top:-67px;}
+
+}
+
+
+
+
+/* desktop and large desktop */
+@media (min-width:980px) {
+
+	#header > .container, #footer > .container, #content-head,
+	#content-body .region, #content-lower .region,
+	#content-bottom .region {width:960px;}
+
+}
+
+
+
+
+
+/* Forms */
+
+.page-event #ngpvanevents-event-filter-form .container-inline-date {width:50%;}
+.page-event #ngpvanevents-event-filter-form .container-inline-date:first-of-type {padding-right:5px;}
+.page-event #ngpvanevents-event-filter-form .container-inline-date:last-of-type {padding-left:5px;}
+form#ngpvanevents-event-filter-form, #ngpvanevents-event-map, .date-padding,
+#ngpvanevents-form-detail-van-form .form-type-textfield label {width:100%;}
+
+#ngpvanevents-event-map {
+	border:1px solid #f1f1ed;
+	clear:left;
+	margin-left:0;
+	height:300px;
+}
+
+.ngp-form .form-item,
+.page-event #ngpvanevents-event-filter-form .form-item,
+#ngpvanevents-form-detail-van-form #edit-signup .form-item {
+	padding:0 0 16px;
+	margin:0;
+	width:100%;
+}
+
+.ngp-col input.form-text,
+.ngp-col select.form-select,
+.ngp-form-submit input,
+.page-event #ngpvanevents-event-filter-form .form-item input,
+#ngpvanevents-form-detail-van-form .form-type-textfield input,
+#ngpvanevents-form-detail-van-form .form-type-textfield select {
+	border:1px solid #ff4d00;
+	border-radius:0;
+	box-shadow:0 0 0;
+	color:#64656a;
+	font-family:"proxima-nova",sans-serif;
+	font-size:1em;
+	height:40px;
+	line-height:30px;
+	padding:5px 10px;
+	margin:0;
+	width:100%;
+}
+
+
+
+/* Portrait tablet and up */
+@media (min-width:768px) {
+
+	form#ngpvanevents-event-filter-form, #ngpvanevents-event-map, #ngpvanevents-infotext,
+	#ngpvanevents-form-detail-van-form #edit-signup .form-item {width:50%;}
+	form#ngpvanevents-event-filter-form, #ngpvanevents-infotext {padding-right:20px;}
+	#ngpvanevents-event-map {clear:none;}
+	#ngpvanevents-form-detail-van-form #edit-signup .form-item:nth-child(odd) {padding-right:5px;}
+	#ngpvanevents-form-detail-van-form #edit-signup .form-item:nth-child(even) {padding-left:5px;}
+
+}
+
+
