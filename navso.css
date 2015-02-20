@@ -76,7 +76,8 @@ p#work-email {
 	margin:.5em 0;	
 }
 
-input.form-submit {
+input.form-submit,
+.page-ngp-form .ngp-form-submit input.form-submit {
 	border-radius:0;
 	background:#585570;
 	color:#fff;
@@ -91,7 +92,15 @@ input.form-submit {
 	margin:0;
 }
 
-input.form-submit:hover {
+.page-ngp-form .ngp-form-submit input.form-submit {
+	margin:1em auto;
+	font-size:2em;
+	height:50px;
+	line-height:40px;
+}
+
+input.form-submit:hover,
+.page-ngp-form .ngp-form-submit input.form-submit:hover {
 	opacity:.85;
 	background:#585570;
 	color:#fff;
@@ -797,6 +806,8 @@ article dl.share-icons dd a:hover {text-decoration:none;}
 
 /* MESSAGES AND FORUM ********************* */
 
+#forum .forum-table.forum-table-forums th.forum-last-post {width:30%;}
+
 #forum .forum-node-create-links .forum-add-node {
 	background-color:#ed3237;
 	padding:10px;
@@ -809,7 +820,7 @@ article dl.share-icons dd a:hover {text-decoration:none;}
 	color:#fff;
 	text-transform:uppercase;
 	font-weight:400;
-	font-family: Oswald,sans-serif;
+	font-family:Oswald,sans-serif;
 }
 
 .forum-page #forum-topic-header {
@@ -1080,14 +1091,17 @@ p.highlight a {
 
 .block.front.trial p {margin:0 auto;}
 
-.block.front.benefits, .block.front.news {
+.block.front.benefits, .block.front.news,
+.block.front.news-and-events {
 	padding-top:20px;
 	padding-bottom:50px;
 	margin-bottom:0;
 }
 
 .block.front.benefits {text-align:center;}
-.block.front.benefits > h2, .block.front.news > h2 {margin:30px 0 40px;}
+
+.block.front.benefits > h2, .block.front.news > h2,
+.block.front.news-and-events > h2 {margin:30px 0 40px;}
 
 .block.front.benefits > h2 {
 	font-weight:300;
@@ -1097,13 +1111,15 @@ p.highlight a {
 	margin:30px 0 40px;
 }
 
-.block.front.benefits .content ul {
+.block.front.benefits .content ul,
+.content ul.benefits-images {
 	margin:0;
 	padding:0;
 	width:100%;
 }
 
-.block.front.benefits li.icon {
+.block.front.benefits li.icon,
+.content ul.benefits-images li.icon {
 	list-style:none;
 	margin:0 0 1em;
 	padding:0;
@@ -1113,12 +1129,14 @@ p.highlight a {
 	display:table;
 }
 
-.block.front.benefits li.icon a:hover {
+.block.front.benefits li.icon a:hover,
+.content ul.benefits-images li.icon a:hover {
 	text-decoration:none;
 	opacity:1;
 }
 
-.block.front.benefits li.icon i {
+.block.front.benefits li.icon i,
+.content ul.benefits-images li.icon i {
 	background-image:url(/sites/navso/themes/navso/images/Icon-Connect.svg);
 	background-repeat:no-repeat;
 	width:100px;
@@ -1127,17 +1145,27 @@ p.highlight a {
 	vertical-align:middle;
 }
 
-li#icon-collaborate i {background-image:url(/sites/navso/themes/navso/images/Icon-Collaborate.svg);}
-li#icon-learn i {background-image:url(/sites/navso/themes/navso/images/Icon-Learn.svg);}
-li#icon-succeed i {background-image:url(/sites/navso/themes/navso/images/Icon-Succeed.svg);}
+.content ul.benefits-images.second-list li.icon i {
+	width:150px;
+	height:150px;
+	}
 
-.block.front.benefits li.icon span {
+.content ul.benefits-images li.icon i {text-indent:-9999px;}
+
+li#icon-collaborate i, .content ul.benefits-images li.icon-collaborate i {background-image:url(/sites/navso/themes/navso/images/Icon-Collaborate.svg);}
+li#icon-learn i, .content ul.benefits-images li.icon-learn i {background-image:url(/sites/navso/themes/navso/images/Icon-Learn.svg);}
+li#icon-succeed i, .content ul.benefits-images li.icon-succeed i {background-image:url(/sites/navso/themes/navso/images/Icon-Succeed.svg);}
+
+.block.front.benefits li.icon span,
+.content ul.benefits-images li.icon span {
+	font-family:"Open Sans", sans-serif;
 	display:table-cell;
 	vertical-align:middle;
 	padding-left:20px;
 }
 
-.block.front.benefits li.icon span b {
+.block.front.benefits li.icon span b,
+.content ul.benefits-images li.icon span b {
 	font-size:1.714em;
 	text-transform:uppercase;
 	color:#585570;
@@ -1148,22 +1176,32 @@ li#icon-succeed i {background-image:url(/sites/navso/themes/navso/images/Icon-Su
 	padding-bottom:10px;
 }
 
-.block.front.news {background-color:#585570;}
-.block.front.news, .block.front.news a {color:#fff;}
+.content ul.benefits-images li.icon span b {font-size:1.5em;}
 
-.block.front.news > h2 {
+.block.front.dark {
+	background-color:#585570;
 	color:#fff;
+}
+
+.block.front.dark a {color:#fff;}
+.block.front.dark .read-more a {color:#ed3237;}
+
+.block.front.news > h2,
+.block.front.news-and-events > h2 {
 	font-size:2.571em;
 	line-height:1em;
 }
 
-#content-body .block.front.news .item-list > ul > li {padding-bottom:0;}
-#content-body .block.front.news .item-list > ul > li:first-of-type {padding-top:0;}
+#content-body .block.front.news .item-list > ul > li,
+#content-body .block.front.news-and-events .item-list > ul > li {padding-bottom:0;}
+#content-body .block.front.news .item-list > ul > li:first-of-type,
+#content-body .block.front.news-and-events .item-list > ul > li:first-of-type {padding-top:0;}
 
-.block.front.news .item-list h2.node-title a,
-.block.front.news .item-list .submitted,
-.block.front.news .item-list .node-source a {color:#fff;}
-.block.front.news .read-more a {color:#ed3237;}
+#content-body .block.front.news-and-events .view-footer .view-news .item-list > ul > li:last-of-type {border-bottom:2px solid #abaab7;}
+#content-body .block.front.news-and-events .view-footer .view-events .item-list > ul > li:last-of-type {padding-top:10px;}
+
+.block.front.dark .item-list h2.node-title a,
+.block.front.dark .submitted {color:#fff;}
 
 .block.front.services {
 	padding-top:60px;
@@ -1391,16 +1429,16 @@ ul.pager li.pager-current {
 
 .block.footer .column-3 p {
 	float:left;
-	width:45%;
+	width:35%;
 	height:48px;
 	line-height:48px;
-	padding-right:20px;
+	padding-right:10px;
 	text-align:right;
 	margin:0;
 }
 
 .block.footer .column-3 ul {
-	width:55%;
+	width:65%;
 	float:left;
 	height:48px;
 	margin:0;
@@ -1452,6 +1490,14 @@ ul.pager li.pager-current {
 /* ----- Responsive ------------------ */
 /* http://twitter.github.com/bootstrap/scaffolding.html#responsive */
 
+@media (min-width:360px) {
+
+	.block.footer .column-3 p {width:45%; padding-right:20px;}
+	.block.footer .column-3 ul {width:55%;}
+
+}
+
+
 @media (min-width:480px) {
 
 	.front #console {top:300px;}
@@ -1484,29 +1530,49 @@ ul.pager li.pager-current {
 
 	.front .block.front.trial {padding:140px 20px 75px;}
 
-	.block.front.benefits .content ul {
+	.block.front.benefits .content ul,
+	.content ul.benefits-images {
 		display:table;
 		table-layout:fixed;
 	}
 	
-	.block.front.benefits li.icon {
+	.block.front.benefits li.icon,
+	.content ul.benefits-images li.icon {
 		display:table-cell;
 		text-align:center;
 		vertical-align:top;
 	}
 
-	.block.front.benefits li.icon i {
+	.content ul.benefits-images.second-list li.icon {
+		display:block;
+		text-align:left;
+	}
+
+	.block.front.benefits li.icon i,
+	.content ul.benefits-images li.icon i {
 		display:block;
 		margin:0 auto;
 	}
 
-	.block.front.benefits li.icon span {
+	.content ul.benefits-images.second-list li.icon i {
+		display:table-cell;
+		margin:0;
+	}
+
+	.block.front.benefits li.icon span,
+	.content ul.benefits-images li.icon span {
 		display:block;
 		padding:0 5px;
 		line-height:1.714em;
 	}
 
-	.block.front.benefits li.icon span b {
+	.content ul.benefits-images.second-list li.icon span {
+		display:table-cell;
+		padding-left:20px;
+	}
+	
+	.block.front.benefits li.icon span b,
+	.content ul.benefits-images li.icon span b {
 		line-height:3em;
 		margin:0;
 		padding:0;
@@ -1802,23 +1868,25 @@ ul.pager li.pager-current {
 
 	.block.front.trial p {width:700px;}
 
-	.block.front.benefits, .block.front.news {
+	.block.front.benefits, .block.front.news, .block.front.news-and-events {
 		padding-top:90px;
 		padding-bottom:75px;
 	}
 
-	.front .block.front.benefits > h2, .front .block.front.news > h2, 
-	.block.front.services > h2 {margin-bottom:40px;}
+	.front .block.front.benefits > h2, .front .block.front.news > h2,
+	.front .block.front.news-and-events > h2, .block.front.services > h2 {margin-bottom:40px;}
 
 	.block.front.benefits li.icon i {
 		width:150px;
 		height:150px;
 	}
 
-	.block.front.news {padding-bottom:40px;}
-	.block.front.news .item-list h2.node-title {width:100%;}
+	.block.front.news, .block.front.news-and-events {padding-bottom:40px;}
+	.block.front.news .item-list h2.node-title,
+	.block.front.news-and-events h2.node-title {width:100%;}
 
-	#content-body .block.front.news .item-list li {
+	#content-body .block.front.news .item-list li,
+	#content-body .block.front.news-and-events .view-footer > .view {
 		border:0;
 		float:left;
 		width:50%;
@@ -1826,7 +1894,11 @@ ul.pager li.pager-current {
 		padding:0 20px 0 0;
 	}
 
-	#content-body .block.front.news .item-list li.views-row-last {padding:0 0 0 20px;}
+	#content-body .block.front.news-and-events .view-footer .view-news .item-list > ul > li:last-of-type {border:0;}
+	#content-body .block.front.news-and-events .view-footer .view-events .item-list > ul > li:last-of-type {padding:0;}
+
+	#content-body .block.front.news .item-list li.views-row-last,
+	#content-body .block.front.news-and-events .view-footer > .view:last-of-type {padding:0 0 0 20px;}
 
 
 
@@ -1864,9 +1936,13 @@ ul.pager li.pager-current {
 		margin:0 auto;
 	}
 	
-	.block.front.benefits li.icon {padding:0 10px;}
-	#content-body .block.front.news .item-list li {padding-right:30px;}
-	#content-body .block.front.news .item-list li.views-row-last {padding:0 0 0 30px;}
+	.block.front.benefits li.icon, .content ul.benefits-images li.icon {padding:0 10px;}
+
+	#content-body .block.front.news .item-list li,
+	#content-body .block.front.news-and-events .view-footer > .view {padding-right:30px;}
+
+	#content-body .block.front.news .item-list li.views-row-last,
+	#content-body .block.front.news-and-events .view-footer > .view:last-of-type {padding:0 0 0 30px;}
 
 	.block.front.services .content {
 		position:relative;
@@ -1937,6 +2013,32 @@ div.ngp-form .ngp-col fieldset select,
 }
 
 .content-body form .form-item textarea {border-radius:0;}
+
+.page-ngp-form .content-body form#ngpvan-oberon-webform legend {
+	background-color:#585570;
+	font-family:Oswald, sans-serif;
+	font-weight:400;
+}
+
+#edit-employerinformation .markup-LegalHeaderHtml {width:100%;}
+
+@media (min-width:480px) and (max-width:599px) {
+
+	.ngp-form .ngp-col-1 .fieldset-wrapper > .form-item {padding:0 5px 5px;}
+
+}
+
+@media (min-width:600px) {
+
+	.page-ngp-form #edit-ticketinformation > .fieldset-wrapper > p {padding:0 10px;}
+
+}
+
+@media (min-width:768px) {
+
+	.page-ngp-form-layout-standard .content-body form#ngpvan-oberon-webform div.ngp-col-1 {padding-left:0;}
+
+}
 
 
 /* MULTISTEP FORMS ********************************* */
