@@ -480,6 +480,8 @@ input.form-submit:hover,
 	height:268px;
 }
 
+#home-slideshow, #home-slideshow > span {height:268px;}
+
 .logged-in .title-bar {position:relative;}
 
 .logged-in .title-bar .region-title-bar .user.menu {
@@ -802,6 +804,11 @@ article dl.share-icons dd a:hover {text-decoration:none;}
 	text-transform:uppercase;
 }
 
+.content-type .content-type-label {
+	font-weight:bold;
+	color:#585570
+}
+
 
 
 /* MESSAGES AND FORUM ********************* */
@@ -1092,7 +1099,8 @@ p.highlight a {
 .block.front.trial p {margin:0 auto;}
 
 .block.front.benefits, .block.front.news,
-.block.front.news-and-events {
+.block.front.news-and-events,
+.block.front.forum.topics {
 	padding-top:20px;
 	padding-bottom:50px;
 	margin-bottom:0;
@@ -1101,7 +1109,8 @@ p.highlight a {
 .block.front.benefits {text-align:center;}
 
 .block.front.benefits > h2, .block.front.news > h2,
-.block.front.news-and-events > h2 {margin:30px 0 40px;}
+.block.front.news-and-events > h2,
+.block.front.forum.topics .view-header > h2 {margin:30px 0 40px;}
 
 .block.front.benefits > h2 {
 	font-weight:300;
@@ -1148,7 +1157,7 @@ p.highlight a {
 .content ul.benefits-images.second-list li.icon i {
 	width:150px;
 	height:150px;
-	}
+}
 
 .content ul.benefits-images li.icon i {text-indent:-9999px;}
 
@@ -1178,6 +1187,9 @@ li#icon-succeed i, .content ul.benefits-images li.icon-succeed i {background-ima
 
 .content ul.benefits-images li.icon span b {font-size:1.5em;}
 
+.block.front.forum.topics .view-header > h2 {color:#585570;}
+.block.front.forum.topics .view-content .item-list section {padding-bottom:0;}
+
 .block.front.dark {
 	background-color:#585570;
 	color:#fff;
@@ -1187,7 +1199,9 @@ li#icon-succeed i, .content ul.benefits-images li.icon-succeed i {background-ima
 .block.front.dark .read-more a {color:#ed3237;}
 
 .block.front.news > h2,
-.block.front.news-and-events > h2 {
+.block.front.news-and-events > h2,
+.block.front.news-and-events .view-header > h2,
+.block.front.forum.topics .view-header > h2 {
 	font-size:2.571em;
 	line-height:1em;
 }
@@ -1272,51 +1286,6 @@ li#icon-succeed i, .content ul.benefits-images li.icon-succeed i {background-ima
 #content-body .view .item-list > ul > li:first-of-type {padding-top:10px;}
 #content-body .view .item-list > ul > li:last-of-type {border-bottom:0;}
 
-.view-library .view-filters {
-	padding:1em;
-	background-color:rgba(88,85,112,.25);
-	margin:1em 0;
-}
-
-.view-library .view-filters > form {margin:0;}
-
-.view-library .view-filters .views-exposed-widgets .views-exposed-widget {
-	width:100%;
-	padding:0 0 1em;
-}
-
-.view-library .view-filters .views-exposed-widgets {margin:0;}
-
-.view-library .view-filters .views-exposed-widgets .views-exposed-widget > label {
-	width:70px;
-	display:block;
-	float:left;
-	padding:5px 0;
-	text-align:center;
-}
-
-.view-library .view-filters .views-exposed-widgets .views-exposed-widget > .views-widget {
-	width:100%;
-	width:calc(100% - 70px);
-}
-
-.view-library .view-filters .views-exposed-widgets .views-exposed-widget select {
-	width:100%;
-	display:block;
-}
-
-.view-library .view-filters .views-exposed-widget.views-submit-button {padding:0;}
-
-.view-library .view-filters .views-exposed-widget input.form-submit {
-	display:block;
-	width:50%;
-	margin:0 auto;
-}
-
-
-
-
-
 ul.pager li > a, ul.pager li > span {
 	border:1px solid rgba(88,85,112,.2);
 	border-radius:3px;
@@ -1332,6 +1301,49 @@ ul.pager li.pager-current {
 
 
 /* ----- Exposed Filters ------------------ */
+
+#block-system-main .view .view-filters {
+	padding:1em;
+	background-color:rgba(88,85,112,.25);
+	margin:1em 0;
+}
+
+#block-system-main .view .view-filters > form {margin:0;}
+
+#block-system-main .view .view-filters .views-exposed-widgets .views-exposed-widget {
+	width:100%;
+	padding:0 0 1em;
+}
+
+#block-system-main .view .view-filters .views-exposed-widgets {margin:0;}
+
+#block-system-main .view .view-filters .views-exposed-widgets .views-exposed-widget > label {
+	width:70px;
+	display:block;
+	float:left;
+	padding:5px 0;
+	text-align:center;
+}
+
+#block-system-main .view .view-filters .views-exposed-widgets .views-exposed-widget > .views-widget {
+	width:100%;
+	width:calc(100% - 70px);
+}
+
+#block-system-main .view .view-filters .views-exposed-widgets .views-exposed-widget select {
+	width:100%;
+	display:block;
+}
+
+#block-system-main .view .view-filters .views-exposed-widget.views-submit-button {padding:0;}
+
+#block-system-main .view .view-filters .views-exposed-widget input.form-submit {
+	display:block;
+	width:50%;
+	margin:0 auto;
+}
+
+
 /* ----- The Latest ------------------ */
 /* ----- Search Results -------------- */
 
@@ -1501,7 +1513,7 @@ ul.pager li.pager-current {
 @media (min-width:480px) {
 
 	.front #console {top:300px;}
-	.front .title-bar .faces {height:350px;}
+	.front .title-bar .faces, #home-slideshow, #home-slideshow > span {height:350px;}
 	
 	.front .title-bar .faces h2 {
 		margin-top:80px;
@@ -1528,7 +1540,7 @@ ul.pager li.pager-current {
 		padding-left:20px;
 	}
 
-	.front .block.front.trial {padding:140px 20px 75px;}
+	.front .block.front.trial {padding:155px 20px 75px;}
 
 	.block.front.benefits .content ul,
 	.content ul.benefits-images {
@@ -1578,20 +1590,21 @@ ul.pager li.pager-current {
 		padding:0;
 	}
 
-	.view-library .view-filters .views-exposed-widgets .views-exposed-widget {width:50%;}
-	.view-library .view-filters .views-exposed-widgets .views-exposed-widget.views-widget-filter-field_author_value {padding-left:5px;}
+	#block-system-main .view .view-filters .views-exposed-widgets .views-exposed-widget {width:50%;}
+	#block-system-main .view-library .view-filters .views-exposed-widgets .views-exposed-widget.views-widget-filter-field_author_value {padding-left:5px;}
 	
-	.view-library .view-filters .views-exposed-widgets .views-exposed-widget.views-widget-filter-title {
+	#block-system-main .view-library .view-filters .views-exposed-widgets .views-exposed-widget.views-widget-filter-title,
+	#block-system-main .view-taxonomy-term .view-filters .views-exposed-widgets .views-exposed-widget.views-widget-filter-type {
 		width:calc(100% - 85px);
 		padding-bottom:0;
 	}
 	
-	.view-library .view-filters .views-exposed-widget.views-submit-button {
+	#block-system-main .view .view-filters .views-exposed-widget.views-submit-button {
 		width:85px;
 		padding-left:1em;
 	}
 	
-	.view-library .view-filters .views-exposed-widget input.form-submit {width:100%;}
+	#block-system-main .view .view-filters .views-exposed-widget input.form-submit {width:100%;}
 
 }
 
@@ -1756,7 +1769,7 @@ ul.pager li.pager-current {
 
 	.front #console .alert {margin:1em 0;}
 	
-	.front .title-bar .faces {
+	.front .title-bar .faces, #home-slideshow, #home-slideshow > span  {
 		height:500px;
 		/* background-image:url(/sites/navso/themes/navso/images/homeTitleBar.jpg); */
 	}
@@ -1868,25 +1881,33 @@ ul.pager li.pager-current {
 
 	.block.front.trial p {width:700px;}
 
-	.block.front.benefits, .block.front.news, .block.front.news-and-events {
+	.block.front.benefits, .block.front.news, .block.front.news-and-events,
+	.block.front.forum.topics {
 		padding-top:90px;
 		padding-bottom:75px;
 	}
 
+	.block.front.forum.topics {padding-top:60px;}
 	.front .block.front.benefits > h2, .front .block.front.news > h2,
-	.front .block.front.news-and-events > h2, .block.front.services > h2 {margin-bottom:40px;}
-
+	.front .block.front.news-and-events > h2, .block.front.services > h2,
+	.front .block.front.news-and-events .view-header > h2,
+	.block.front.forum.topics .view-header > h2 {margin-bottom:40px;}
+	
 	.block.front.benefits li.icon i {
 		width:150px;
 		height:150px;
 	}
 
-	.block.front.news, .block.front.news-and-events {padding-bottom:40px;}
+	.block.front.news, .block.front.news-and-events, .block.front.forum.topics {padding-bottom:40px;}
 	.block.front.news .item-list h2.node-title,
-	.block.front.news-and-events h2.node-title {width:100%;}
+	.block.front.news-and-events h2.node-title,
+	.block.front.news-and-events .view-header > h2,
+	.block.front.forum.topics .view-header > h2,
+	.block.front.forum.topics h2.node-title {width:100%;}
 
 	#content-body .block.front.news .item-list li,
-	#content-body .block.front.news-and-events .view-footer > .view {
+	#content-body .block.front.news-and-events .view-footer > .view,
+	#content-body .block.front.forum.topics .view-footer > .view {
 		border:0;
 		float:left;
 		width:50%;
@@ -1898,7 +1919,8 @@ ul.pager li.pager-current {
 	#content-body .block.front.news-and-events .view-footer .view-events .item-list > ul > li:last-of-type {padding:0;}
 
 	#content-body .block.front.news .item-list li.views-row-last,
-	#content-body .block.front.news-and-events .view-footer > .view:last-of-type {padding:0 0 0 20px;}
+	#content-body .block.front.news-and-events .view-footer > .view:last-of-type,
+	#content-body .block.front.forum.topics .view-footer > .view:last-of-type {padding:0 0 0 20px;}
 
 
 
@@ -1939,10 +1961,12 @@ ul.pager li.pager-current {
 	.block.front.benefits li.icon, .content ul.benefits-images li.icon {padding:0 10px;}
 
 	#content-body .block.front.news .item-list li,
-	#content-body .block.front.news-and-events .view-footer > .view {padding-right:30px;}
+	#content-body .block.front.news-and-events .view-footer > .view,
+	#content-body .block.front.forum.topics .view-footer > .view {padding-right:30px;}
 
 	#content-body .block.front.news .item-list li.views-row-last,
-	#content-body .block.front.news-and-events .view-footer > .view:last-of-type {padding:0 0 0 30px;}
+	#content-body .block.front.news-and-events .view-footer > .view:last-of-type,
+	#content-body .block.front.forum.topics .view-footer > .view:last-of-type {padding:0 0 0 30px;}
 
 	.block.front.services .content {
 		position:relative;
@@ -2179,7 +2203,6 @@ body.page-ngp-form-layout-multistep .fieldset-wrapper .markup-LegalHeaderHtml {
 	margin:0 auto;
 	width:100%;
 	position:absolute;
-	height:500px;
 	top:0;
 	left:0;
 	z-index:8;
@@ -2194,7 +2217,6 @@ body.page-ngp-form-layout-multistep .fieldset-wrapper .markup-LegalHeaderHtml {
 	background-position:50% 20%;
     background-repeat: no-repeat;
 	position:absolute;
-	height:500px;
 	width:100%;
 	-webkit-animation-name:xfade;
 	-webkit-animation-timing-function:ease-in-out;
